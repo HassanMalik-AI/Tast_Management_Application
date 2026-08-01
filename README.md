@@ -209,17 +209,3 @@ ACCESS_TOKEN_TTL=30
 | `ACCESS_TOKEN_TTL` | JWT expiry in minutes (default: 30) |
 
 ---
-
-<p align="center">
-  <img src="images\Authentication_diagram.png" width="600" alt="Screenshot">
-</p>
-
-
-## 📐 Design Principles
-
-- **Domain-Driven Structure** — each feature domain owns its model, DTOs, controller, and router
-- **Single Responsibility** — every file has one clearly defined job
-- **Dependency Injection** — database sessions and settings are injected by FastAPI, not hardcoded
-- **Separation of Concerns** — routing, business logic, and data access are strictly separated
-- **Shared Utilities** — common code (auth, DB, config) lives in `utils/` to avoid duplication
-
